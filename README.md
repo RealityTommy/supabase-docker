@@ -3,10 +3,32 @@
 - [ ] Python 3.12.5
 - [ ] Docker
 - [ ] Docker Compose
+# How I Made This
 ## [Set Up Supabase](https://supabase.com/docs/guides/self-hosting/docker)
 1. Clone the supabase repo within the project.
 	```
 	git clone --depth 1 https://github.com/supabase/supabase
+	```
+2. Navigate into the docker folder.
+	```
+	cd supabase/docker
+	```
+1. Copy the fake env vars.
+	```
+	cp .env.example .env
+	```
+4. Pull the latest docker images.
+	```
+	docker compose pull
+	```
+5. Start the services (in detached mode).
+	```
+	docker compose up -d
+	```
+# How to Set Up
+1. Clone this repo and its submodule.
+	```
+	git clone --recurse-submodules
 	```
 2. Navigate into the docker folder.
 	```
