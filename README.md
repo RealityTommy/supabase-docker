@@ -1,56 +1,56 @@
 # supabase-docker
 ## Prerequisites
 - [ ] [Docker](https://www.docker.com/)
-# How I Made This
+## How I Made This
 ## [Set Up Supabase](https://supabase.com/docs/guides/self-hosting/docker)
 1. Clone the supabase repo within the project.
-	```
-	git clone --depth 1 https://github.com/supabase/supabase
-	```
+```
+git clone --depth 1 https://github.com/supabase/supabase
+```
 2. Navigate into the docker folder.
-	```
-	cd supabase/docker
-	```
+```
+cd supabase/docker
+```
 1. Copy the fake env vars.
-	```
-	cp .env.example .env
-	```
+```
+cp .env.example .env
+```
 4. Pull the latest docker images.
-	```
-	docker compose pull
-	```
+```
+docker compose pull
+```
 5. Start the services (in detached mode).
-	```
-	docker compose up -d
-	```
-# How to Set Up
+```
+docker compose up -d
+```
+## How to Set Up
 1. Clone this repo and its submodule.
-	```
-	git clone --recurse-submodules
-	```
+```
+git clone --recurse-submodules
+```
 2. Navigate into the docker folder.
-	```
-	cd supabase/docker
-	```
+```
+cd supabase/docker
+```
 1. Copy the fake env vars.
-	```
-	cp .env.example .env
-	```
+```
+cp .env.example .env
+```
 4. Pull the latest docker images.
-	```
-	docker compose pull
-	```
+```
+docker compose pull
+```
 5. Start the services (in detached mode).
-	```
-	docker compose up -d
-	```
-# [Access Supabase Dashboard](https://supabase.com/docs/guides/self-hosting/docker#accessing-supabase-dashboard)
+```
+docker compose up -d
+```
+## [Access Supabase Dashboard](https://supabase.com/docs/guides/self-hosting/docker#accessing-supabase-dashboard)
 You can access the Supabase Dashboard through the API gateway on port `8000`. For example: `http://<your-ip>:8000`, or [localhost:8000](http://localhost:8000/) if you are running Docker locally.
 
 You will be prompted for a username and password. By default, the credentials are:
 - Username: `supabase`
 - Password: `this_password_is_insecure_and_should_be_updated`
-## [Dashboard Authentication](https://supabase.com/docs/guides/self-hosting/docker#dashboard-authentication)
+### [Dashboard Authentication](https://supabase.com/docs/guides/self-hosting/docker#dashboard-authentication)
 
 The dashboard is protected with Basic Authentication. The default user and password MUST be updated before using Supabase in production. Update the following values in the `.env` file:
 
