@@ -1,8 +1,6 @@
 # supabase-docker
 ## Prerequisites
-- [ ] Python 3.12.5
-- [ ] Docker
-- [ ] Docker Compose
+- [ ] [Docker](https://www.docker.com/)
 # How I Made This
 ## [Set Up Supabase](https://supabase.com/docs/guides/self-hosting/docker)
 1. Clone the supabase repo within the project.
