@@ -26,7 +26,7 @@ docker compose up -d
 ## How to Set Up
 1. Clone this repo and its submodule.
 ```
-git clone --recurse-submodules
+git clone --recurse-submodules <github_repo_url>
 ```
 2. Navigate into the docker folder.
 ```
